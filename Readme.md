@@ -34,7 +34,7 @@ Use "Back" button to return to previous screen.
 ### Head First  Patterns 
 There are three main groups of Gof Design Patterns  Creational, Structural and Behavioral.
 #### Creational
-- Abstract Factory	
+- [Abstract Factory](https://github.com/v777779/gof_design_patterns/edit/master/Readme.md)	
 - Factory Method     
 - Singleton                   
 - Builder
@@ -59,17 +59,6 @@ There are three main groups of Gof Design Patterns  Creational, Structural and B
 - Template Method
 - Visitor
 - Chain of responsibility
-
-### Patterns Description
-#### Abstract Factory
-Motivation:  abstract factory pattern was created ...TBD
-Classic Diagram:
-\<TBD\>
-Preliminary Diagram (w/o pattern):
-\<TBD\>
-Pattern Diagram:
-\<TBD\>
-
 
 ###  Readings
 - ["Head First Design Patterns"](https://www.amazon.com/Head-First-Design-Patterns-Brain-Friendly/dp/0596007124/ref=sr_1_1?dchild=1&keywords=Head+First+Design+Patterns%3A+A+Brain-Friendly+Guide&qid=1592750140&s=books&sr=1-1) by E.Freeman, E.Freeman, K.Sierra, B.Bates  © O'Reilly 2004
