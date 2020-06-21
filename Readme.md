@@ -68,4 +68,4 @@ There are three main groups of Gof Design Patterns  Creational, Structural and B
 
 
 
-*Published  21.06.2020.*
+<sup>*Published  21.06.2020.*</sup>
