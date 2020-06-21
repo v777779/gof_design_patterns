@@ -34,7 +34,7 @@ Use "Back" button to return to previous screen.
 ### Head First  Patterns 
 There are three main groups of Gof Design Patterns  Creational, Structural and Behavioral.
 #### Creational
-- [Abstract Factory](https://github.com/v777779/gof_design_patterns/edit/master/Readme.md)	
+- [Abstract Factory](https://github.com/v777779/gof_design_patterns/edit/master/)	
 - Factory Method     
 - Singleton                   
 - Builder
