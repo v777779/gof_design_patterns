@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/gof_fragment">
+
+    <fragment
+        android:id="@+id/gof_fragment"
+        android:name="com.example.gofp.fragments.GofFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_gof">
+        <action
+            android:id="@+id/action_plural"
+            app:destination="@id/plural_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/plural_fragment"
+        android:name="com.example.gofp.fragments.PluralFragment"
+        android:label="{toolbar}"
+        tools:layout="@layout/fragment_plural">
+        <action
+            android:id="@+id/action_pattern"
+            app:destination="@id/pattern_fragment" />
+        <argument
+            android:name="patternPackage"
+            app:argType="string" />
+        <argument
+            android:name="patternGroup"
+            app:argType="string" />
+        <argument
+            android:name="toolbar"
+            app:argType="string" />
+     </fragment>
+
+    <fragment
+        android:id="@+id/pattern_fragment"
+        android:name="com.example.gofp.fragments.PatternFragment"
+        android:label="{toolbar}"
+        tools:layout="@layout/fragment_pattern">
+        <argument
+            android:name="className"
+            app:argType="string" />
+        <argument
+            android:name="classNameBefore"
+            app:argType="string" />
+        <argument
+            android:name="patternName"
+            app:argType="string" />
+        <argument
+            android:name="toolbar"
+            app:argType="string" />
+    </fragment>
+</navigation>

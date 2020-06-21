@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="viewModel"
+            type="com.example.gofp.fragments.PluralViewModel" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragments.PluralFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".fragments.PluralFragment">
+
+            <TextView
+                android:id="@+id/text_creational"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:text='@{"patterns/creational"}' />
+
+            <Button
+                android:id="@+id/button_abstract_factory"
+                style="@style/PatternButton"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:onClick="@{v->viewModel.onClick(v)}"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_creational"
+                app:text='@{"creational/abstract_factory"}' />
+
+            <Button
+                android:id="@+id/button_builder"
+                style="@style/PatternButton"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:onClick="@{v->viewModel.onClick(v)}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/button_abstract_factory"
+                app:text='@{"creational/builder"}' />
+
+            <Button
+                android:id="@+id/button_factory_method"
+                style="@style/PatternButton"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:onClick="@{v->viewModel.onClick(v)}"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_builder"
+                app:text='@{"creational/factory_method"}' />
+
+            <Button
+                android:id="@+id/button_prototype"
+                style="@style/PatternButton"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:onClick="@{v->viewModel.onClick(v)}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/button_factory_method"
+                app:text='@{"creational/prototype"}' />
+
+            <Button
+                android:id="@+id/button_singletone"
+                style="@style/PatternButton"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:onClick="@{v->viewModel.onClick(v)}"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_factory_method"
+                app:text='@{"creational/singleton"}' />
+
+
+            <TextView
+                android:id="@+id/text_structural"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_singletone"
+                app:text='@{"patterns/structural"}' />
+
+            <Button
+                android:id="@+id/button_adapter"
+                style="@style/PatternButton"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:onClick="@{v->viewModel.onClick(v)}"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_structural"
+                app:text='@{"structural/adapter"}' />
+
+            <Button
+                android:id="@+id/button_bridge"
+                style="@style/PatternButton"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:onClick="@{v->viewModel.onClick(v)}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/button_adapter"
+                app:text='@{"structural/bridge"}' />
+
+            <Button
+                android:id="@+id/button_composite"
+                style="@style/PatternButton"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:onClick="@{v->viewModel.onClick(v)}"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_bridge"
+                app:text='@{"structural/composite"}' />
+
+            <Button
+                android:id="@+id/button_decorator"
+                style="@style/PatternButton"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:onClick="@{v->viewModel.onClick(v)}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/button_composite"
+                app:text='@{"structural/decorator"}' />
+
+            <Button
+                android:id="@+id/button_facade"
+                style="@style/PatternButton"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:onClick="@{v->viewModel.onClick(v)}"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_decorator"
+                app:text='@{"structural/facade"}' />
+
+            <Button
+                android:id="@+id/button_fly_weight"
+                style="@style/PatternButton"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:onClick="@{v->viewModel.onClick(v)}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/button_facade"
+                app:text='@{"structural/fly_weight"}' />
+
+            <Button
+                android:id="@+id/button_proxy"
+                style="@style/PatternButton"
+                android:layout_height="wrap_content"
+                android:onClick="@{v->viewModel.onClick(v)}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_fly_weight"
+                app:text='@{"structural/proxy"}' />
+
+            <TextView
+                android:id="@+id/text_behavioural"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_proxy"
+                app:text='@{"patterns/behavioral"}' />
+
+            <Button
+                android:id="@+id/button_chain_of_responsibility"
+                style="@style/PatternButtonWide"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:onClick="@{v->viewModel.onClick(v)}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_memento"
+                app:text='@{"behavioral/chain_of_responsibility"}' />
+
+            <Button
+                android:id="@+id/button_command"
+                style="@style/PatternButton"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:onClick="@{v->viewModel.onClick(v)}"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_behavioural"
+                app:text='@{"behavioral/command"}' />
+
+            <Button
+                android:id="@+id/button_interpreter"
+                style="@style/PatternButton"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:onClick="@{v->viewModel.onClick(v)}"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_command"
+                app:text='@{"behavioral/interpreter"}' />
+
+            <Button
+                android:id="@+id/button_iterator"
+                style="@style/PatternButton"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:onClick="@{v->viewModel.onClick(v)}"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_interpreter"
+                app:text='@{"behavioral/iterator"}' />
+
+            <Button
+                android:id="@+id/button_mediator"
+                style="@style/PatternButton"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:onClick="@{v->viewModel.onClick(v)}"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_iterator"
+                app:text='@{"behavioral/mediator"}' />
+
+            <Button
+                android:id="@+id/button_memento"
+                style="@style/PatternButton"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:onClick="@{v->viewModel.onClick(v)}"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_mediator"
+                app:text='@{"behavioral/memento"}' />
+
+            <Button
+                android:id="@+id/button_observer"
+                style="@style/PatternButton"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:onClick="@{v->viewModel.onClick(v)}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_behavioural"
+                app:text='@{"behavioral/observer"}' />
+
+            <Button
+                android:id="@+id/button_state"
+                style="@style/PatternButton"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:onClick="@{v->viewModel.onClick(v)}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_observer"
+                app:text='@{"behavioral/state"}' />
+
+            <Button
+                android:id="@+id/button_strategy"
+                style="@style/PatternButton"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:onClick="@{v->viewModel.onClick(v)}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_state"
+                app:text='@{"behavioral/strategy"}' />
+
+            <Button
+                android:id="@+id/button_template_method"
+                style="@style/PatternButton"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:onClick="@{v->viewModel.onClick(v)}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_strategy"
+                app:text='@{"behavioral/template_method"}' />
+
+            <Button
+                android:id="@+id/button_visitor"
+                style="@style/PatternButton"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:onClick="@{v->viewModel.onClick(v)}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_template_method"
+                app:text='@{"behavioral/visitor"}' />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>
