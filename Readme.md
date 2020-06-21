@@ -73,7 +73,7 @@ Pattern Diagram:
 
 ###  Readings
 - ["Head First Design Patterns"](https://www.amazon.com/Head-First-Design-Patterns-Brain-Friendly/dp/0596007124/ref=sr_1_1?dchild=1&keywords=Head+First+Design+Patterns%3A+A+Brain-Friendly+Guide&qid=1592750140&s=books&sr=1-1) by E.Freeman, E.Freeman, K.Sierra, B.Bates  © O'Reilly 2004
-- ["Design Patterns: Elements of Reusable Object-Oriented Software (Addison-Wesley Professional Computing Series) "](https://www.amazon.com/Design-Patterns-Object-Oriented-Addison-Wesley-Professional-ebook/dp/B000SEIBB8) by E. Gamma, R. Helm, R. Johnson, J. Vissides  © 1995 by Addison-Wesley
+- ["Design Patterns: Elements of Reusable Object-Oriented Software (Addison-Wesley Professional Computing Series) "](https://www.amazon.com/Design-Patterns-Object-Oriented-Addison-Wesley-Professional-ebook/dp/B000SEIBB8) by E.Gamma, R.Helm, R.Johnson, J.Vissides  © 1995 by Addison-Wesley
 ### Contributors
 [@Vadim Voronov  2020](https://github.com/v777779)
 
