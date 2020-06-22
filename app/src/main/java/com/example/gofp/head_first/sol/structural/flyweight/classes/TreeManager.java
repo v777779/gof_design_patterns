@@ -1,4 +1,4 @@
-package com.example.gofp.head_first.sol.structural.fly_weight.classes;
+package com.example.gofp.head_first.sol.structural.flyweight.classes;
 
 import java.util.HashMap;
 import java.util.List;

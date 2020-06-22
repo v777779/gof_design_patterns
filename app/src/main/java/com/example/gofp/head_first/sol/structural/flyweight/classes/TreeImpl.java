@@ -1,10 +1,10 @@
-package com.example.gofp.head_first.pre.structural.fly_weight.classes;
+package com.example.gofp.head_first.sol.structural.flyweight.classes;
 
 import com.example.gofp.binding.Systems;
 
 import java.util.Locale;
 
-public class TreeImpl  implements Tree{
+public class TreeImpl implements Tree {
     private String name;
     private int x;
     private int y;
@@ -17,11 +17,11 @@ public class TreeImpl  implements Tree{
         this.age = age;
     }
 
-    @Override
     public void display() {
         String s = String.format(Locale.ENGLISH, "%s, x: %02d, y: %02d, age: %02d @%x",
                 name, x, y, age, hashCode());
         Systems.out.println(s);
     }
+
 
 }

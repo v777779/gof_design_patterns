@@ -1,4 +1,4 @@
-package com.example.gofp.head_first.pre.structural.fly_weight.classes;
+package com.example.gofp.head_first.pre.structural.flyweight.classes;
 
 import java.util.List;
 import java.util.Random;

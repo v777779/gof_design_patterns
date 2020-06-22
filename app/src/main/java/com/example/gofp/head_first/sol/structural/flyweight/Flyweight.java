@@ -1,14 +1,14 @@
-package com.example.gofp.head_first.sol.structural.fly_weight;
+package com.example.gofp.head_first.sol.structural.flyweight;
 
 import com.example.gofp.binding.BasePattern;
 import com.example.gofp.binding.Systems;
-import com.example.gofp.head_first.sol.structural.fly_weight.classes.Tree;
-import com.example.gofp.head_first.sol.structural.fly_weight.classes.TreeManager;
+import com.example.gofp.head_first.sol.structural.flyweight.classes.Tree;
+import com.example.gofp.head_first.sol.structural.flyweight.classes.TreeManager;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class FlyWeight extends BasePattern {
+public class Flyweight extends BasePattern {
     @Override
     public void main() {
         TreeManager manager = new TreeManager();

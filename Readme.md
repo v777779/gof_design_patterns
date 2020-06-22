@@ -9,30 +9,35 @@ An Android application which demonstrates source code of GoF design patterns fro
 3. The course ["Gof Patterns Java from Makedonsky"](https://www.udemy.com/course/java-patterns/) by Alex Makedonsky © Udemy 2019
 
 ### Introduction
-This demo presents Gof Design Patterns for all three sources, which named in application as "Head First", "PluralSight" and "Udemy".
-Every pattern source code has two versions, with and without pattern usage. 
-Code that does not use patten placed in "pre" package. Code with pattern is in "sol" package. 
-Head First  patterns have three class diagram for every pattern, with minor exception.
+This demo presents Gof Design Patterns for all three sources, which are named as "Head First", "Pluralsight" and "Udemy".
+Every pattern source code has two versions, one uses pattern, another one not. 
+Code with pattern is placed in "sol" package.  Code that does not use pattern is in "pre" package. 
+Head First  patterns have descriptions with class diagrams for every pattern.
+
 - first diagram show classic UML diagram for pattern. 
 - second diagram is UML diagram for code that does not use pattern( package "pre").
 - third diagram shows UML class diagram  for real code that uses pattern (package "sol").
 
-Notes. Not all patterns have pre version, but the number of such exceptions is small.
+Notes. Not all patterns have "pre" version, but the number of such exceptions is small.
 Pluralsight and Udemy patterns don't have UML diagrams, this is subject for TBD.
 
 ### Navigation
-This are screens from application. Every button is self explained. 
-- to show result of code tha uses pattern,  user should click on button "Pattern"
-- to show result of code w/o pattern, user should click on button "No Pattern"
+These are screens of application. Every button is self explained. 
+- to show the result of code that uses pattern,  click on "Pattern" button; 
+
+- to show the result of code w/o pattern, click on "No Pattern" button.
+
 The screen of patterns is scrollable, use scrolling to show buttons  that are not visible.
 The output text window in pattern screen is scrollable. Use scrolling to show the results.
 Use "Back" button to return to previous screen.
+
+  
 
 <img src="doc/screen_001.png" alt="drawing" width="800"/> 
 
 
 ### Head First  Patterns 
-There are three main groups of Gof Design Patterns  Creational, Structural and Behavioral.
+There are three main groups of Gang of Four Design Patterns  Creational, Structural and Behavioral.
 #### Creational
 - [Abstract Factory](https://github.com/v777779/gof_design_patterns/)	
 - Factory Method     

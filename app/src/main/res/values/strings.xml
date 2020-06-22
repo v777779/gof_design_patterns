@@ -64,7 +64,7 @@
         <item name="composite">Composite</item>
         <item name="decorator">Decorator</item>
         <item name="facade">Facade</item>
-        <item name="flyweight">Fly Weight</item>
+        <item name="flyweight">Flyweight</item>
         <item name="proxy">Proxy</item>
     </string-array>
     <string-array name="structural_keys">
@@ -73,7 +73,7 @@
         <item name="2">composite</item>
         <item name="3">decorator</item>
         <item name="4">facade</item>
-        <item name="5">fly_weight</item>
+        <item name="5">flyweight</item>
         <item name="6">proxy</item>
     </string-array>
 
