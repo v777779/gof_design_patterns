@@ -1,31 +1,34 @@
 package com.example.gofp.head_first.sol.structural.flyweight.classes;
 
-import java.util.HashMap;
-import java.util.List;
 import java.util.Random;
 
 public class TreeManager {
+    private static final int MAX_TREES = 10;
+    private static final int MAX_DIMEN = 3;
     private final Random rand;
-    private final HashMap<String, Tree> map;
+    private int[][] treeArray;
+    private Tree tree;
 
     public TreeManager() {
         this.rand = new Random(System.currentTimeMillis());
-        this.map = new HashMap<>();
+        this.treeArray = new int[MAX_TREES][MAX_DIMEN];
+        this.tree = new TreeImpl();
+        initialize();
     }
 
-    public Tree create(String name) {
-        Tree tree = map.get(name);
-        if (tree == null) {
-            tree = new TreeImpl(name, rand.nextInt(75), rand.nextInt(75),
-                    rand.nextInt(50));
-            map.put(name, tree);
+    private void initialize() {
+        for (int i = 0; i < MAX_TREES; i++) {
+            int x = rand.nextInt(75);
+            int y = rand.nextInt(75);
+            int age = rand.nextInt(50);
+            treeArray[i] = new int[]{x, y, age};
         }
-        return tree;
     }
 
-    public void displayTrees(List<Tree> trees) {
-        for (Tree tree : trees) {
-            tree.display();
+    public void displayTrees() {
+        for (int[] values : treeArray) {
+         tree.display(values[0], values[1],values[2]);
+
         }
     }
 }

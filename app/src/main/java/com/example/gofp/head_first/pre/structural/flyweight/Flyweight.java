@@ -13,18 +13,8 @@ public class Flyweight extends BasePattern {
     public void main()   {
         TreeManager manager = new TreeManager();
 
-        List<Tree> trees  = new ArrayList<>();
-        trees.add(manager.create("Apple "));
-        trees.add(manager.create("Apple "));
-        trees.add(manager.create("Apple "));
-        trees.add(manager.create("Cherry"));
-        trees.add(manager.create("Cherry"));
-        trees.add(manager.create("Oak     "));
-        trees.add(manager.create("Birch   "));
-        trees.add(manager.create("Linden"));
-
         Systems.out.println("Garden:");
-        manager.displayTrees(trees);
+        manager.displayTrees();
 
     }
 }
