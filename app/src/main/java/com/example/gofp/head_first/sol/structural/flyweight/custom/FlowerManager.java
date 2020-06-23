@@ -13,7 +13,7 @@ public class FlowerManager {
             "Rose   ", "Lotus  ", "Poppy ", "Cherry", "Daisy  "};
     private final Random rand;
     private FlyweightFactory factory;
-    private final List<FlowerImpl> flowers;
+    private final List<Flower> flowers;
 
     public FlowerManager(FlyweightFactory factory) {
         this.factory = factory;

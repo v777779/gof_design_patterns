@@ -27,7 +27,7 @@ public class TreeManager {
 
     public void displayTrees() {
         for (int[] values : treeArray) {
-         tree.display(values[0], values[1],values[2]);
+            tree.display(values[0], values[1], values[2]);
 
         }
     }

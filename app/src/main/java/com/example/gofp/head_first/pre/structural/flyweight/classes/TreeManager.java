@@ -28,7 +28,7 @@ public class TreeManager {
 
     public void displayTrees(){
         for (Tree tree : trees) {
-            Systems.out.println(tree.display());
+           tree.display();
         }
     }
 }
