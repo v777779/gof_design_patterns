@@ -1,7 +1,5 @@
 package com.example.gofp.head_first.pre.structural.flyweight.classes;
 
-import com.example.gofp.binding.Systems;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;

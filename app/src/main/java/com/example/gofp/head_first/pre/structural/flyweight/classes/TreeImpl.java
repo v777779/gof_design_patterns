@@ -4,6 +4,12 @@ import com.example.gofp.binding.Systems;
 
 import java.util.Locale;
 
+/**
+ *  The parameters x,y,age are fields of the Tree class
+ *  In Flyweight pattern context these parameters are considered as extrinsic ones
+ *  So for the solutions they extracted from the class fields and moved to the arguments
+ *  of display method
+ */
 public class TreeImpl implements Tree {
     private int x;
     private int y;
