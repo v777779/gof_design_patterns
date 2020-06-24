@@ -39,7 +39,7 @@ public class FlowerManager {
 
     public void displayFlowers() {
         for (Flower flower : flowers) {
-            Systems.out.println(flower.display());
+            flower.display();
         }
     }
 

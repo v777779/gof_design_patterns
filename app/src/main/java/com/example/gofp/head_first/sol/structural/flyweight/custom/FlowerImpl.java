@@ -2,7 +2,7 @@ package com.example.gofp.head_first.sol.structural.flyweight.custom;
 
 import java.util.Locale;
 
-public class FlowerImpl implements  Flower {
+public class FlowerImpl implements Flower {
     private Flower flyweight;
     private int x;
     private int y;
@@ -13,9 +13,14 @@ public class FlowerImpl implements  Flower {
         this.y = y;
     }
 
-    public String display() {
-        return String.format(Locale.ENGLISH, "%s, x: %02d, y: %02d, @%x",
-                flyweight.display(), x, y,  flyweight.hashCode());
+    @Override
+    public void display() {
+        flyweight.display(x, y);  // x, y extrinsic parameters
+    }
+
+    @Override
+    public void display(int x, int y) {
+        flyweight.display(x, y);
     }
 
 
