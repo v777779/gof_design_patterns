@@ -40,10 +40,11 @@ Use "Back" button to return to previous screen.
 There are three main groups of Gang of Four Design Patterns  Creational, Structural and Behavioral.
 #### Creational
 - [Abstract Factory](doc/abstract_factory/description.md)	
-- Factory Method     
-- Singleton                   
-- Builder
-- Prototype
+- [Builder](doc/builder/description.md)
+- [Factory Method](doc/factory_method/description.md)	
+- [Prototype](doc/prototype/description.md)	
+- [Singleton](doc/singleton/description.md)	                   
+
 #### Structural
 - Adapter
 - Composite
@@ -52,6 +53,7 @@ There are three main groups of Gang of Four Design Patterns  Creational, Structu
 - Decorator
 - Fly Weight
 - Proxy
+
 #### Behavioral
 - Command
 - Interpreter
