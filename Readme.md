@@ -13,7 +13,7 @@ This demo presents Gof Design Patterns for all three sources, which are named as
 Every pattern source code has two versions, one uses pattern, another one not. 
 Code with pattern is placed in "sol" package.  Code that does not use pattern is in "pre" package. <br/>
 
-##### Head First patterns only have descriptions with class diagrams for every pattern:
+#### Head First patterns only have descriptions with class diagrams for every pattern:
 
 - UML class diagram for pattern;
 - UML class diagram for code implementation that use pattern (package "sol");
