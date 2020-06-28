@@ -11,7 +11,7 @@ Classic definition from  [Gang of Four Design Patterns)](https://www.amazon.com/
 
 #### Implementation w/o pattern
 
-UML Class diagram for [code without pattern](../../app\src/main/java/com/example/gofp/head_first/pre/creational/abstract_factory\/), from [Head First Design Patterns](https://www.amazon.com/Head-First-Design-Patterns-Brain-Friendly/dp/0596007124) :
+UML Class diagram for [code without pattern](../../app\src/main/java/com/example/gofp/head_first/pre/creational/abstract_factory\\/ ), from [Head First Design Patterns](https://www.amazon.com/Head-First-Design-Patterns-Brain-Friendly/dp/0596007124) :
 
 <img src="abstract_factory_pre.png" alt="drawing" width="800"/> 
 
