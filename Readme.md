@@ -12,14 +12,15 @@ An Android application which demonstrates source code of GoF design patterns fro
 This demo presents Gof Design Patterns for all three sources, which are named as "Head First", "Pluralsight" and "Udemy".
 Every pattern source code has two versions, one uses pattern, another one not. 
 Code with pattern is placed in "sol" package.  Code that does not use pattern is in "pre" package. <br/>
-Head First  patterns have descriptions with class diagrams for every pattern.
 
-- first diagram show classic UML diagram for pattern. 
-- second diagram is UML diagram for code that does not use pattern( package "pre").
-- third diagram shows UML class diagram  for real code that uses pattern (package "sol").
+###### Head First patterns only have descriptions with class diagrams for every pattern:
+
+- UML class diagram for pattern;
+- UML class diagram for code implementation that use pattern (package "sol");
+- UML class diagram for code implementation that does not use pattern (package "pre").
 
 Notes. Not all patterns have "pre" version, but the number of such exceptions is small.
-Pluralsight and Udemy patterns don't have UML diagrams, this is subject for TBD.
+
 
 ### Navigation
 These are screens of application. Every button is self explained. 
