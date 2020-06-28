@@ -1,5 +1,7 @@
 package com.example.gofp.head_first.pre.behavioral.chain_of_responsibility.classes;
 
+import androidx.annotation.RequiresApi;
+
 import com.example.gofp.binding.Systems;
 
 public class RequestHandler {
@@ -17,18 +19,33 @@ public class RequestHandler {
     public void handleRequest(Request request) {
         switch (request.getCode()) {
             case SPAM_CODE:
-                Systems.out.println(request.getMessage() + " processed by: Spam handler");
+                spamHandler(request);
                 break;
             case FAN_CODE:
-                Systems.out.println(request.getMessage() + " processed by: Fan handler");
+                fanHandler(request);
                 break;
             case COMPLAINT_CODE:
-                Systems.out.println(request.getMessage() + " processed by: Complaint handler");
+                complaintHandler(request);
                 break;
             case NEWLOC_CODE:
-                Systems.out.println(request.getMessage() + " processed by: NewLoc handler");
+                newLocHandler(request);
                 break;
-
         }
+    }
+
+    private void spamHandler(Request request) {
+        Systems.out.println(request.getMessage() + " processed by: Spam handler");
+    }
+
+    private void fanHandler(Request request) {
+        Systems.out.println(request.getMessage() + " processed by: Fan handler");
+    }
+
+    private void complaintHandler(Request request) {
+        Systems.out.println(request.getMessage() + " processed by: Complaint handler");
+    }
+
+    private void newLocHandler(Request request) {
+        Systems.out.println(request.getMessage() + " processed by: NewLoc handler");
     }
 }

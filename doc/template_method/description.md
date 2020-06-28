@@ -18,4 +18,4 @@ UML class diagram of [code with pattern](../../app/src/main/java/com/example/gof
 
 UML class diagram of [code without pattern](../../app/src/main/java/com/example/gofp/head_first/pre/behavioral/template_method) from [Head First Design Patterns](https://www.amazon.com/Head-First-Design-Patterns-Brain-Friendly/dp/0596007124) :
 
-<img src="template_method_pre.png" alt="drawing" width="500"/> 
+<img src="template_method_pre.png" alt="drawing" width="450"/> 
