@@ -5,9 +5,9 @@ import java.util.Random;
 public class WeatherData {
     private static final Random rand = new Random();
 
-    private CurrentDisplay currentDisplay;
-    private StatisticsDisplay statisticsDisplay;
-    private ForecastDisplay forecastDisplay;
+    private Display currentDisplay;
+    private Display statisticsDisplay;
+    private Display forecastDisplay;
 
     public WeatherData() {
         this.currentDisplay = new CurrentDisplay();

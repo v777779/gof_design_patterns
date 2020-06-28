@@ -47,26 +47,26 @@ There are three main groups of Gang of Four Design Patterns  Creational, Structu
 - [Singleton](doc/singleton/description.md)	                   
 
 #### Structural
-- Adapter
-- Composite
-- Facade
-- Bridge 
-- Decorator
-- Fly Weight
-- Proxy
+- [Adapter](doc/adapter/description.md)	
+- [Bridge](doc/bridge/description.md)	
+- [Composite](doc/composite/description.md)	
+- [Decorator](doc/decorator/description.md)
+- [Facade](doc/facade/description.md)		
+- [Fly Weight](doc/flyweight/description.md)	
+- [Proxy](doc/proxy/description.md)	
 
 #### Behavioral
-- Command
-- Interpreter
-- Iterator
-- Mediator
-- Memento
-- Observer
-- State
-- Strategy
-- Template Method
-- Visitor
-- Chain of responsibility
+- [Chain of responsibility](doc/chain_of_responsibility/description.md)
+- [Command](doc/command/description.md)	
+- [Interpreter](doc/interpreter/description.md)	
+- [Iterator](doc/iterator/description.md)	
+- [Mediator](doc/mediator/description.md)	
+- [Memento](doc/memento/description.md)	
+- [Observer](doc/observer/description.md)	
+- [State](doc/state/description.md)	
+- [Strategy](doc/strategy/description.md)	
+- [Template Method](doc/template_method/description.md)	
+- [Visitor](doc/visitor/description.md)
 
 ###  Readings
 - ["Head First Design Patterns"](https://www.amazon.com/Head-First-Design-Patterns-Brain-Friendly/dp/0596007124) by E.Freeman, E.Freeman, K.Sierra, B.Bates  © O'Reilly 2004
