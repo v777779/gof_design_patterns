@@ -1,5 +1,5 @@
 package com.example.gofp.head_first.sol.behavioral.command.classes;
 
-public interface Command {
+public interface ICommand {
     void execute();
 }

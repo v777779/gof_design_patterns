@@ -4,13 +4,13 @@ import androidx.annotation.NonNull;
 
 public class SimpleRemote {
     private static final int SLOT_NUMBER = 7;
-    private Command[] onCommands;
-    private Command[] offCommands;
+    private ICommand[] onCommands;
+    private ICommand[] offCommands;
 
     public SimpleRemote() {
-        Command noCommand = new NoCommand();
-        onCommands = new Command[SLOT_NUMBER];
-        offCommands = new Command[SLOT_NUMBER];
+        ICommand noCommand = new NoCommand();
+        onCommands = new ICommand[SLOT_NUMBER];
+        offCommands = new ICommand[SLOT_NUMBER];
         for (int i = 0; i < SLOT_NUMBER; i++) {
             onCommands[i] = noCommand;
             offCommands[i] = noCommand;
@@ -31,7 +31,7 @@ public class SimpleRemote {
         offCommands[slot].execute();
     }
 
-    public void setCommand(int slot, Command onCommand, Command offCommand) {
+    public void setCommand(int slot, ICommand onCommand, ICommand offCommand) {
         if (slot < 0 || slot >= SLOT_NUMBER) {
             return;
         }

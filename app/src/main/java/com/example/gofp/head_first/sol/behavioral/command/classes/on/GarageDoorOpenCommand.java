@@ -1,9 +1,9 @@
 package com.example.gofp.head_first.sol.behavioral.command.classes.on;
 
-import com.example.gofp.head_first.sol.behavioral.command.classes.Command;
+import com.example.gofp.head_first.sol.behavioral.command.classes.ICommand;
 import com.example.gofp.head_first.sol.behavioral.command.classes.action.GarageDoor;
 
-public class GarageDoorOpenCommand implements Command {
+public class GarageDoorOpenCommand implements ICommand {
 
     private GarageDoor garageDoor;
 

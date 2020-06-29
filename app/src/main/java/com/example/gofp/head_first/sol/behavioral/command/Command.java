@@ -2,6 +2,7 @@ package com.example.gofp.head_first.sol.behavioral.command;
 
 import com.example.gofp.binding.BasePattern;
 import com.example.gofp.binding.Systems;
+import com.example.gofp.head_first.sol.behavioral.command.classes.ICommand;
 import com.example.gofp.head_first.sol.behavioral.command.classes.SimpleRemote;
 import com.example.gofp.head_first.sol.behavioral.command.classes.action.CeilingFan;
 import com.example.gofp.head_first.sol.behavioral.command.classes.action.CeilingFanImpl;
@@ -31,16 +32,16 @@ public class Command extends BasePattern {
         GarageDoor garageDoor = new GarageDoorImpl("");
         StereoCD stereo = new StereoCDImpl("LivingRoom");
         // command shell
-        LightOnCommand livingRoomLightOn = new LightOnCommand(livingRoomLight);
-        LightOffCommand livingRoomLightOff = new LightOffCommand(livingRoomLight);
-        LightOnCommand kitchenLighOn = new LightOnCommand(kitchenLight);
-        LightOffCommand kitchenLighOff = new LightOffCommand(kitchenLight);
-        CeilingFanOnCommand ceilingFanOnCommand =     new CeilingFanOnCommand(livingRoomFan);
-        CeilingFanOffCommand ceilingFanOffCommand =     new CeilingFanOffCommand(livingRoomFan);
-        GarageDoorOpenCommand garageOpen = new GarageDoorOpenCommand(garageDoor);
-        GarageDoorCloseCommand garageClose = new GarageDoorCloseCommand(garageDoor);
-        StereoOnCommand stereoOnCommand = new StereoOnCommand(stereo);
-        StereoOffCommand stereoOffCommand = new StereoOffCommand( stereo);
+        ICommand livingRoomLightOn = new LightOnCommand(livingRoomLight);
+        ICommand livingRoomLightOff = new LightOffCommand(livingRoomLight);
+        ICommand kitchenLighOn = new LightOnCommand(kitchenLight);
+        ICommand kitchenLighOff = new LightOffCommand(kitchenLight);
+        ICommand ceilingFanOnCommand =     new CeilingFanOnCommand(livingRoomFan);
+        ICommand ceilingFanOffCommand =     new CeilingFanOffCommand(livingRoomFan);
+        ICommand garageOpen = new GarageDoorOpenCommand(garageDoor);
+        ICommand garageClose = new GarageDoorCloseCommand(garageDoor);
+        ICommand stereoOnCommand = new StereoOnCommand(stereo);
+        ICommand stereoOffCommand = new StereoOffCommand( stereo);
 
         // client
         remote.setCommand(0,livingRoomLightOn,livingRoomLightOff);
