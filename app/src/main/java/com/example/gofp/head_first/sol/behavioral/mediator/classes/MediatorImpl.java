@@ -23,6 +23,7 @@ public class MediatorImpl extends AbstractMediator {
             checkCalendar();
             checkAlarm();
         } else if (event == events.get(INDEX_SPRINKLER)) {
+            checkAlarm();
             checkCalendar();
             checkShower();
             checkTemp();
