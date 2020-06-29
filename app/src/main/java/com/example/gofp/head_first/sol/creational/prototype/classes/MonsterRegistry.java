@@ -8,7 +8,7 @@ import java.util.Map;
 public class MonsterRegistry {
     private static final String TAG = "MonsterRegistry";
 
-    private Map<String, Monster> map;
+    private Map<String, AbstractMonster> map;
 
     public MonsterRegistry() {
         this.map = new HashMap<>();
@@ -22,11 +22,11 @@ public class MonsterRegistry {
 
     public Monster getMonster(String type) {
         try {
-            Monster correctMonster = map.get(type);
+            AbstractMonster correctMonster = map.get(type);
             if (correctMonster == null) {
                 return null;
             }
-            return (Monster) correctMonster.clone();
+            return (AbstractMonster) correctMonster.clone();
         } catch (Exception e) {
             Systems.out.println(TAG + " " + e.getMessage());
         }
