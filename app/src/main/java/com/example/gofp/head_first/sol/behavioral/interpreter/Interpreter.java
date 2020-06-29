@@ -10,14 +10,17 @@ import com.example.gofp.head_first.sol.behavioral.interpreter.classes.RightComma
 import com.example.gofp.head_first.sol.behavioral.interpreter.classes.Sequence;
 import com.example.gofp.head_first.sol.behavioral.interpreter.classes.Variable;
 
+import java.util.Arrays;
+
 public class Interpreter extends BasePattern {
     @Override
     public void main() {
 
-        Expression variable = new Variable();
         Expression quack =  new QuackCommand();
         Expression fly = new FlyCommand();
         Expression right = new RightCommand();
+        Expression variable = new Variable(Arrays.asList(quack,fly,right));
+        Expression repetition = new Repetition(variable, quack);
 
         Expression sequence = new Sequence(fly,right);
         String context = "fly right";
@@ -28,7 +31,6 @@ public class Interpreter extends BasePattern {
         Systems.out.println("Interpret sequence: "+context);
         Systems.out.println(sequence.interpret(context));
 
-        Expression repetition = new Repetition(variable, quack);
         context = "quack quack quack";
         Systems.out.println("Interpret repetition: "+context);
         Systems.out.println(repetition.interpret(context));
