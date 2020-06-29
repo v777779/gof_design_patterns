@@ -5,6 +5,13 @@ public abstract class Handler {
 
     public abstract void handleRequest(Request request);
 
+    public Handler() {
+    }
+
+    public Handler(Handler successor) {
+        this.successor = successor;
+    }
+
     public void setSuccessor(Handler successor) {
         this.successor = successor;
     }

@@ -16,14 +16,15 @@ import java.util.List;
 public class ChainOfResponsibility extends BasePattern {
     @Override
     public void main() {
-        Handler spam = new SpamHandler();
-        Handler fan = new FanHandler();
-        Handler complaint = new ComplaintHandler();
-        Handler newLoc = new NewLocHandler();
 
-        spam.setSuccessor(fan);             // spam -> fan -> complaint -> newloc
-        fan.setSuccessor(complaint);
-        complaint.setSuccessor(newLoc);
+        Handler newLoc = new NewLocHandler();
+        Handler complaint = new ComplaintHandler(newLoc);
+        Handler fan = new FanHandler(complaint);
+        Handler spam = new SpamHandler(fan);
+//
+//        spam.setSuccessor(fan);             // spam -> fan -> complaint -> newloc
+//        fan.setSuccessor(complaint);
+//        complaint.setSuccessor(newLoc);
 
         List<Request> requests = new ArrayList<>();
         requests.add(new Request("SPAM request", 100));

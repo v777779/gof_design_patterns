@@ -5,6 +5,13 @@ import com.example.gofp.binding.Systems;
 public class ComplaintHandler extends Handler {
     private static final int COMPLAINT_CODE = 300;
 
+    public ComplaintHandler() {
+    }
+
+    public ComplaintHandler(Handler successor) {
+        super(successor);
+    }
+
     @Override
     public void handleRequest(Request request) {
         if (request.getCode() == COMPLAINT_CODE) {

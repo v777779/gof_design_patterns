@@ -5,6 +5,13 @@ import com.example.gofp.binding.Systems;
 public class FanHandler extends Handler {
     private static final int COMPLAINT_CODE = 200;
 
+    public FanHandler() {
+    }
+
+    public FanHandler(Handler successor) {
+        super(successor);
+    }
+
     @Override
     public void handleRequest(Request request) {
         if (request.getCode() == COMPLAINT_CODE) {
