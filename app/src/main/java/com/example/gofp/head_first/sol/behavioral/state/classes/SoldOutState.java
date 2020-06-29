@@ -3,7 +3,6 @@ package com.example.gofp.head_first.sol.behavioral.state.classes;
 import com.example.gofp.binding.Systems;
 
 public class SoldOutState implements States {
-
     private GumballMachine gumballMachine;
 
     public SoldOutState(GumballMachine gumballMachine) {

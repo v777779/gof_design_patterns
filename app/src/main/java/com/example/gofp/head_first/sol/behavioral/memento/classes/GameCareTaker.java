@@ -4,8 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class GameCareTaker {
-    private List<MasterGameObject.Memento> mementos
-            ;
+    private List<MasterGameObject.Memento> mementos;
 
     public GameCareTaker() {
         this.mementos = new ArrayList<>();

@@ -7,12 +7,6 @@ import com.example.gofp.binding.Systems;
 import java.util.Locale;
 
 public class GumballMachine {
-    public static final int SOLD_OUT = 0;
-    public static final int NO_QUARTER = 1;
-    public static final int HAS_QUARTER = 2;
-    public static final int SOLD = 3;
-
-
     private States soldOutState;
     private States noQuarterState;
     private States hasQuarterState;
